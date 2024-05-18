@@ -1,0 +1,116 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Times New Roman';
+}
+
+html, body{
+ height:100%;
+ width:100%;
+}
+h1{
+    height: 8.5vh;
+    width: 100vw;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    line-height: 8.5vh;
+    font-weight: 900;
+}
+#main{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+img{
+    height: 25vh;
+    width: 15vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+img:hover{
+    border: 5px solid black;
+}
+#score-board{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5rem;
+}
+#user-score , #comp-score{
+    text-align: center;
+}
+p{
+    font-size: 1.5rem;
+}
+#u-s , #c-s{
+    font-size: 3rem;
+}
+#r-container{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#restart-btn{
+    background-color: black;
+    color: white;
+    font-size: 2.4rem;
+    position: absolute;
+    left: 45vw;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+span{
+    font-size: 2.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    background-color: blue;
+}
+@media (max-width:550px) {
+    #main{
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-right: 1rem;
+}
+    #score-board{
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    img{
+        height: 20vh;
+        width: 25vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    img:hover{
+        border: 5px solid black;
+    }
+    span{
+        font-size: 1.25rem;
+        color: white;
+        border-radius: 1rem;
+        padding: 0.75rem;
+        background-color: blue;
+    }
+    #restart-btn{
+        background-color: black;
+        color: white;
+        font-size: 1.4rem;
+        position: absolute;
+        left: 40vw;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+}
